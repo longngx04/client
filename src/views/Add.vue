@@ -12,15 +12,20 @@
           <input type="date" required v-model="task.created_date" />
         </div>
         <br />
-        <div class="ui labeled input fluid">
-        <div class="ui label">Status</div>
-        <select required v-model="task.status" class="ui dropdown">
+         <div class="ui labeled input fluid"> 
+        <div class="ui label">Status</div> 
+         <select required v-model="task.status" class="ui dropdown">
           <option value="" disabled>Select Status</option>
-          <option value="Pending">Pending</option>
-          <option value="In Progress">On-Going</option>
-          <option value="Completed">Completed</option>
-        </select>
-      </div>
+          <option value="pending">pending</option>
+          <option value="on-going">on-going</option>
+          <option value="completed">completed</option>
+        </select> 
+         </div> 
+        <!-- <div class="ui labeled input fluid">
+          <div class="ui label">Status</div>
+          <input type="text" required v-model="task.status" />
+        </div> -->
+      
         <button class="ui primary button">Submit</button>
       </form>
     </div>

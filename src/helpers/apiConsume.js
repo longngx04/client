@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const api = "http://localhost:6666/todos/";
+const api = "http://localhost:8888/todos/";
 
 export const ViewAllTasks = async()=>{
     try{

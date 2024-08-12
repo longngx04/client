@@ -68,7 +68,7 @@ export default{
             await DeleteATask(id);
             //3. refresh the word list (remove deleted words)
             const updatedTask = this.task.filter((task) => task._id !== id);
-            this.tasks = updatedTask;
+            this.task = updatedTask;
             //4. display flash message after deletion
             this.flash("Delete word succeed !");
             }
